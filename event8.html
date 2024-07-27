@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function focus1(){
+            var txt = document.getElementById("txt");
+            txt.style.backgroundColor="grey";
+            txt.style.color="white";
+        }
+        function blur1(){
+            var txt = document.getElementById("txt");
+            txt.style.backgroundColor="white";
+            txt.style.color="red";
+        }
+    </script>
+</head>
+<body onload="alert('Welcome To JavaScript')">
+    <form action="welcome.html" onsubmit="alert('Form Submitted successfully')">
+        <input id="txt" type="text" placeholder="Enter text" onfocus="focus1()" onblur="blur1()">
+        <input type="submit" value="Check">
+    </form>
+</body>
+</html>

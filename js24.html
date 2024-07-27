@@ -1,0 +1,27 @@
+<script>
+    var arr = [1,2,3,4,5];
+
+    document.write("<br>Array elements are : ");
+    /*
+    for(var i=0;i<arr.length;i++){
+        document.write("<br>arr["+i+"] : "+arr[i]);
+    }
+    */
+
+    /*
+    for(var index in arr){
+        document.write("<br>arr["+index+"] : "+arr[index]);
+    }
+    */
+
+    /*
+    for(var value of arr){
+        document.write("<br>element : "+value);
+    }
+    */
+
+   arr.forEach(function(element){
+        document.write("<br>element : "+element);
+   });
+   
+</script>

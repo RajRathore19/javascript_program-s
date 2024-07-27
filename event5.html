@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            height:600px;
+            width: 800px;
+            margin: auto;
+            border-style: solid;
+        }
+        #inner{
+            height:400px;
+            width: 800px;
+            border-style: solid;
+        }
+        .sub{
+            height:170px;
+            width: 173px;
+            margin: 10px;
+            border-style: solid;
+            float:left;
+        }
+    </style>
+    <script>
+        function swip(element){
+            // var smallerImage = element.src;
+             var biggerImage = document.getElementById("biggerImage").src;
+            
+            var a = element.src;
+            element.src = biggerImage;
+            document.getElementById("biggerImage").src = a;
+        }
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <img src="world2.jpg" height="400" id="biggerImage" width="800" alt="">
+        </div>
+        <div class="sub">
+            <img src="world.jpg" onclick="swip(this)" height="170" width="173" alt="">
+        </div>
+        <div class="sub">
+            <img src="fruits.jpg" onclick="swip(this)" height="170" width="173" alt="">
+        </div>
+        <div class="sub">
+            <img src="Birds.jpg" onclick="swip(this)" height="170" width="173" alt="">
+        </div>
+        <div class="sub">
+            <img src="cup.jpg" onclick="swip(this)" height="170" width="173" alt="">
+        </div>
+    </div>
+</body>
+</html>

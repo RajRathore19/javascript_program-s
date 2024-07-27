@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: crimson;
+            padding: 25px;
+            margin: 10px;
+        }
+        h1{
+            background-color: white;
+            padding: 5px;
+        }
+        p{
+            background-color: green;
+            padding: 10px;
+            color:white;
+        }
+    </style>
+    <script>
+        function enter(){
+            document.getElementById("count1").innerHTML++;
+        }
+        function move(){
+            document.getElementById("count2").innerHTML++;
+        }
+        function over(){
+            document.getElementById("count3").innerHTML++;
+        }
+    </script>
+</head>
+<body>
+    <div onmouseenter="enter()">
+        <h1>Mouse Enter | <span id="count1">0</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corporis itaque, aliquam rerum rem quos fugit vero debitis unde excepturi labore, numquam officia Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit harum doloremque, saepe ipsa eaque sit dignissimos, quae, dicta quibusdam temporibus nisi odio porro. Veniam iste dignissimos quisquam repellendus eaque distinctio. sequi aut laudantium reiciendis ipsum mollitia neque.</p>
+    </div>
+    <div onmousemove="move()">
+        <h1>Mouse Move | <span id="count2">0</span></h1>
+        <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, doloribus. Vero earum beatae saepe. Cum ea nobis, magnam rerum tenetur, maiores mollitia provident delectus, quia porro in consequuntur reiciendis sunt. ipsum dolor sit amet consectetur adipisicing elit. Autem corporis itaque, aliquam rerum rem quos fugit vero debitis unde excepturi labore, numquam officia sequi aut laudantium reiciendis ipsum mollitia neque.</p>
+    </div>
+    <div onmouseover="over()">
+        <h1>Mouse Over | <span id="count3">0</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corporis itaque, aliquam Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla optio, totam adipisci ipsum voluptatem exercitationem sint necessitatibus facilis porro suscipit, doloribus quod, tenetur amet possimus distinctio officiis. Voluptatem, corrupti nihil? rerum rem quos fugit vero debitis unde excepturi labore, numquam officia sequi aut laudantium reiciendis ipsum mollitia neque.</p>
+    </div>
+
+</body>
+</html>

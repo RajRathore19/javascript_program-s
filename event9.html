@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function up(){
+            var up = document.getElementById("up");
+            up.style.textTransform = "uppercase"
+        }
+        function down(){
+            var down = document.getElementById("down");
+            down.style.textTransform = "lowercase"
+        }
+        function enter(){
+            var enter = document.getElementById("enter");
+            enter.style.textTransform = "capitalize"
+        }
+        function move(){
+            var move = document.getElementById("move");
+            move.style.textDecoration = "underline"
+        }
+        function over(){
+            var over = document.getElementById("over");
+            over.style.textDecoration = "overline"
+        }
+        function leave(){
+            var leave = document.getElementById("leave");
+            leave.style.textDecoration = "line-through"
+        }
+        function out(){
+            var out = document.getElementById("out");
+            out.style.backgroundColor = "red"
+        }
+
+</script>
+</head>
+<body>
+    <span id="up" onmouseup="up()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="down" onmousedown="down()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="enter" onmouseenter="enter()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="move" onmousemove="move()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="over" onmouseover="over()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="leave" onmouseleave="leave()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+    <br><span id="out" onmouseout="out()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, accusamus.</span>
+
+</body>
+</html>

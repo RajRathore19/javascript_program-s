@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            alert("gets entry");
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1+num2;
+            document.getElementById("show").innerHTML ="Result : "+(num1+num2);
+            document.getElementById("btn").value = "Add : "+(num1+num2);
+        }
+    </script>
+</head>
+<body>
+    
+    <h2>Addition of two numbers</h2>
+    <input type="text" placeholder="Enter First Number" id="num1"> <br>
+    <input type="text" placeholder="Enter Second Number" id="num2"> <br>
+    <input type="text" readonly placeholder="Result" id="result"> <br>
+    <input type="submit" value="Add" onclick="myFun()" id="btn"> <br>
+    <span style="color:red" id="show">Result will show here</span>
+</body>
+</html>

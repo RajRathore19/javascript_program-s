@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function keyup(){
+            alert("up");
+        }
+        function keydown(){
+            alert("down")
+        }
+        function keypress(){
+            alert("press");
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeyup="keyup()" placeholder="key up"> <br>
+    <input type="text" onkeydown="keydown()" placeholder="key down"> <br>
+    <input type="text" onkeypress="keypress()" placeholder="key press"> <br>
+</body>
+</html>
