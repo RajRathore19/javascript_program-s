@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height:50px;
+        width:200px;
+        margin:auto;
+        border:2px solid black;
+        background-color: rgb(235, 235, 157);
+    }
+    span{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <center><h1>
+        This is a random number guess game 
+    </h1>
+    <h2>enter number 0-9</h2>
+    <h3>you have 5 chance</h3></center>
+    
+    <div id="box">
+           <center><input id="number" type="text" placeholder="enter no.">
+            <button onclick="check()">check</button> 
+            </center> 
+    </div>
+   <center><span id="show"></span></center> 
+</body>
+<script>
+let b = parseInt(Math.random()*10);
+console.log(b);
+
+    function check(){
+    var a = document.getElementById("number").value;
+    var show =  document.getElementById("show");
+    
+    if(a==b)
+    {
+      show.style.color = "green";
+      show.innerText="true";
+    }
+    else{
+        show.style.color = "red";
+        show.innerText="wrong";
+    }
+    }
+</script>
+</html>

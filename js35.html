@@ -1,0 +1,15 @@
+<script>
+    //callback function 
+
+
+    function fun(callback){
+        console.log("one")
+        callback();
+        console.log("three")
+        callback();                                                                                                       
+    }
+    function demo(){
+        console.log("two");
+    }
+    fun(demo);
+</script>

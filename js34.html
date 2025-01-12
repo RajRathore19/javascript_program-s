@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This project just change background color</h1>
+    <button onclick="startcolor()" id="start">start</button>
+    <button  onclick="stopcolor()" id="stop">stop</button>
+</body>
+<script>
+    var a = document.getElementById("start");
+    var b = document.getElementById("stop");
+//color generate 
+    var bcolor = function (){
+        let hex ="0123456789ABCDEF";
+        let color = "#";
+
+        for(i = 0 ; i< 6 ; i++){
+            color+=hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+    }
+
+    //change bg color 
+    let bgchanger;
+  function startcolor(){
+   function changebgcolor() {document.body.style.backgroundColor=bcolor();}
+
+    bgchanger= setInterval(changebgcolor,1000);
+    
+  }
+console.log(bgchanger)
+    function stopcolor(){
+        clearInterval(bgchanger)
+        bgchanger=null;
+    }
+</script>
+</html>
